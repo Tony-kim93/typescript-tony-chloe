@@ -1,0 +1,16 @@
+.fullCon {
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.mustDo {
+  color: brown;
+}
+
+.dead {
+  margin-left: 20px;
+  color: aqua;
+}
