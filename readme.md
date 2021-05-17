@@ -501,9 +501,6 @@ console.log(customQueue.pop()); //undefined
 
 ```
 
-위의 내용을 보면 이해 안가는게 두가지가 있습니다.
-한가지는 `protected` 한가지는 "없다"라는 의미를 표현할 때 `undefined`를 설정값으로 준것.
-
 `protected`는 `private, public`과 같은 `accessor`입니다. 그리고 `private`과 유사히 동작합니다.
 하지만 `protected`로 선언된 멤버는 파생 클래스 인스턴스에서 액세스 할 수 있습니다 예로들면
 
@@ -526,13 +523,6 @@ class RealTony extends Tony {
 }
 
 ```
-
-`Tony`의 외부에서 `name`을 사용할 순 없지만 `RealTony`의 인스턴스 메소드에서 사용가능하다 왜냐하면 `RealTony`는 `Tony`로 부터 파생됬기 떄문이다.
-두번째로는 왜 "없다"를 명시할 때 `undefined`를 사용했나?입니다.
-
-`null`과 `undefined`의 차이에 대해서 함께 토론했던 적이 있었다.
-분명 거기서 우린 없다를 명시할 때 `null`을 사용하기로 하였다. 하지만 타입스크립트에서는 문제가 생긴다.
-그때 말씀드렸듯 `console.log(typeof null)`이다. 두개를 비교하면 알수있다.
 
 ```js
 console.log(typeof null); // object
